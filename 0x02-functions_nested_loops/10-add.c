@@ -2,8 +2,10 @@
 
 /**
  * add - add two integers
- * Return: sum of 
-*/
+ * Return: sum of  a and b
+*  @a: first input
+ * @b: second input
+ */
 
 int add(int a, int b)
 {
