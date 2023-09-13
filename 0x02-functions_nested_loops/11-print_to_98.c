@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * function to print numbers to 98
-*/
-
-
+ * print_to_98 - function to print all natural  numbers to 98
+ * followed by a new line
+ * @n: print from this number
+ */
 void print_to_98(int n)
 {
 	int count;
