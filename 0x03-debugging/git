@@ -1,4 +1,0 @@
-#the git sequence
-git add .
-git commit -m  "C programming_debugging"
-git push
