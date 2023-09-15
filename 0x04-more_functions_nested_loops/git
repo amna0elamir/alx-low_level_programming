@@ -1,0 +1,4 @@
+#the git sequence
+git add .
+git commit -m  "C_programming_0x04_more_functions"
+git push
