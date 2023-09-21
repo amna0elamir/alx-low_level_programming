@@ -1,0 +1,4 @@
+# push work to github repo
+git add .
+git commit -m "0x06. C - More pointers, arrays and strings"
+git push
