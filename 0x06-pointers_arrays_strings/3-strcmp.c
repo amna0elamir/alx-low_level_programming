@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _strcmp - function compare string
- * @str1: input string
- * @str2: input string
+ * @s1: input string
+ * @s2: input string
  *
- * Return: (str1 - str2)
+ * Return: (s1 - s2)
  */
 
 int *_strcmp(char *s1, char *s2)
@@ -18,7 +18,10 @@ int *_strcmp(char *s1, char *s2)
 		{
 			return (s1[i] - s2[i]);
 		}
-		i++;
+		else
+		{
+			i++;
+		}
 	}
 	return (0);
 }
