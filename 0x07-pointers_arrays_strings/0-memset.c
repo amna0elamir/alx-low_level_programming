@@ -2,17 +2,19 @@
 /**
  * _memset - function to set memory
  * @s: input char
- * @i: input int
+ * @b: input to fill with
  * @n: input value
  *
- * Return: void
+ * Return: pointer 
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	char *p = s;
 
-	for (i = 0; i < n; i++)
-		s[i] = b;
-	
-	Return(s);
+	while (n--)
+	{
+		*s = b;
+		s++;
+	}
+	return (p);
 }

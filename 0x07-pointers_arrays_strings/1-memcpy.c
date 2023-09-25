@@ -1,19 +1,22 @@
 #include "main.h"
 
 /**
- * _memcpy - function to cp 
+ * _memcpy - function to cp
  * @dest: copy there
  * @src: copy from
  * @n: input value
- *
- * Return: nothing
+ * Return: pointer
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int i;
+	char *p = dest;
 
-	for (i = 0; i < n; i++)
-		dest[i] = src[i];
+	while (n--)
+	{
+		*dest = *src;
+		src++;
+		dest++;
+	}
 
-	return (dest);
+	return (p);
 }
