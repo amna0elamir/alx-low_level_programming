@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strstr - function locates a substrin
+ * _strstr - function locates a substring
  * @haystack: input string
- * @needle: an input string
- * Return:  a pointer to begin of string
+ * @needle: input string
+ * Return: a pointer to begin of string
  * or NULL if  not found.
  */
 char *_strstr(char *haystack, char *needle)
