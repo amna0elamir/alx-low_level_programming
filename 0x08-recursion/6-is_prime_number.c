@@ -2,11 +2,11 @@
 int is_prime_rec(int num, int i);
 
 /**
- * is_prime_rec - function to check for factors
+ * is_prime_rec - function to check if number has factors or no
  * @num: input number
  * @i: input to use for check
  *
- * Return : 1 or 0
+ * Return: 0 or 1
  */
 int is_prime_rec(int num, int i)
 {
