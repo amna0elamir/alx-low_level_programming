@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - that multiplies two numbers
- * @argc:arg count
- * @argv:arg vector
+ * main - program that multiplies two numbers
+ * @argc: arg count
+ * @argv: arg vector
  *
  * Return: 0 or 1
  */
