@@ -6,13 +6,13 @@
  * @argc:arg count
  * @argv:arg vector
  *
- * Result: 0 or 1
+ * Return: 0 or 1
  */
 int main(int argc, char **argv)
 {
 	int m1, m2;
 
-	if  (argc < 2 )
+	if  (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
