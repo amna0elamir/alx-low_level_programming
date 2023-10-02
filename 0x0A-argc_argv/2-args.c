@@ -9,8 +9,11 @@
 int main(int argc, char **argv)
 {
 
-	if (argc > 0)
-		printf("%s\n", *argv++);
+	while (argc > 0)
+	{
+		printf("%s\n", argv[argc - 1]);
+		argc--;
+	}
 
 	return (0);
 }
