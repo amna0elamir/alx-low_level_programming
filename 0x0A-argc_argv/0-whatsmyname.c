@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - a program that print name
+ * main - a program that prints its name, followed by a new line.
  * @argc: arg count
  * @argv: arg vector
  *
- * Result: 0
+ * Return: 0
  */
 int main(int argc, char **argv)
 {
