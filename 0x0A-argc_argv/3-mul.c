@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int m1, m2;
+	int m1, m2, m;
 
 	if  (argc < 2)
 	{
@@ -21,7 +21,8 @@ int main(int argc, char **argv)
 	{
 		m1 = atoi(argv[1]);
 		m2 = atoi(argv[2]);
-		printf("%d\n", m1 * m2);
+		m = m1 * m2;
+		printf("%d\n", m);
+		return (0);
 	}
-	return (0);
 }
