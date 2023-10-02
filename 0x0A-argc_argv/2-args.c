@@ -8,9 +8,9 @@
  */
 int main(int argc, char **argv)
 {
-	(void)argv;
+
 	if (argc > 0)
-		printf("%d\n", argc);
+		printf("%d\n", *argv++);
 
 	return (0);
 }
