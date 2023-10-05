@@ -1,5 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
-
 /**
  * _strdup - func  returns a pointer to mem, which contains a copy strings
  * @str: input string
