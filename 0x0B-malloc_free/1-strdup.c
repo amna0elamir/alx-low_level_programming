@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strdup - func  returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter. 
+ * _strdup - func  returns a pointer to mem, which contains a copy strings
  * @str: input string
  *
  * Return: Null or str.
@@ -31,9 +31,9 @@ char *_strdup(char *str)
 		while (i < len)
 		{
 			new_str[i] = *str;
-													                			str++;
-																		i++;
-		}	
+			str++;
+			i++;
+		}
 		new_str[i] = '\0';
 		return (start);
 	}

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _str_concat - func 
+ * str_concat - func concatenates two strings.
  * @s1: input string
  * @s2:input string
  *
@@ -36,7 +36,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i < lens1)
 			new_str[i] = s1[i];
-		else											                			new_str[i] = s2[i - lens1];
+		else
+			new_str[i] = s2[i - lens1];
 	}
 	new_str[i] = '\0';
 	return (starts1);
