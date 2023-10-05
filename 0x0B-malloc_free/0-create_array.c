@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * create_array - func creates an array of chars, and fill with specific char.
