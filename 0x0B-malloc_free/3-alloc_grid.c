@@ -1,6 +1,6 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-#include < stdio.h>
+#include "main.h"
 
 /**
  * alloc_grid - func that returns a pointer to 2D array
