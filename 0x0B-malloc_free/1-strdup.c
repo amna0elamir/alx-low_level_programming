@@ -30,13 +30,15 @@ char *_strdup(char *str)
 
 	if (new_str == NULL)
 		return (NULL);
-	else
+	if (new_str !=NULL)
+	{	
 		while (i < len)
 		{
 			new_str[i] = *str;
 			str++;
 			i++;
 		}
+	}
 	new_str[i] = '\0';
 	return (new_str);
 }
