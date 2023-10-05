@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 #include "main.h"
 /**
  * _strdup - func  returns a pointer to mem, which contains a copy strings
@@ -12,7 +13,7 @@ char *_strdup(char *str)
 	char *new_str, *start;
 	int i = 0, len = 0;
 
-	if (str == NULL)
+	if (str == '\0')
 		return (NULL);
 
 	start = str;
@@ -27,7 +28,7 @@ char *_strdup(char *str)
 	new_str = malloc(sizeof(char) * (len + 1));
 	start = new_str;
 
-	if (new_str != NULL)
+	if (new_str != '\0')
 	{
 		while (i < len)
 		{
@@ -39,5 +40,5 @@ char *_strdup(char *str)
 		return (start);
 	}
 	else
-	return (NULL);
+		return (NULL);
 }
