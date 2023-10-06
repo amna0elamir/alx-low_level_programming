@@ -5,13 +5,14 @@
  * free_grid - frees a 2d array
  * @grid:memory to be freed
  * @height:rows
- * Return:returns Nothing
+ *
+ * Return:Nothing
  */
 
 void free_grid(int **grid, int height)
 {
 	int r;
-	
+
 	for (r = 0; r < height; r++)
 		free(grid[r]);
 	free(grid);
