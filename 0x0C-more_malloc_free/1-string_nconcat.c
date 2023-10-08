@@ -31,16 +31,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	for (; i < (len1 + n); i++)
 	{
-		if (i < len1)
-		{
-			new[i] = *s1;
-			s1++;
-		}
-		else
-		{
-			new[i] = *s2;
-			s2++;
-		}
+	if (i < len1)
+	{
+	new[i] = *s1;
+	s1++;
+	}
+	else
+	{
+		new[i] = *s2;
+		s2++;
+	}
 	}
 	new[i] = '\0';
 	return (new);
