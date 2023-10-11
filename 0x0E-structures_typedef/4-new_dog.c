@@ -1,46 +1,45 @@
-#include "dog.h"
 #include <stdlib.h>
-
+#include "dog.h"
 /**
- * new_dog - creates a new dog struct
- * @name: Dog name
- * @age: Dog age
- * @owner: Dog owner
- * Return: new dog
+ * new_dog - creates a new dog
+ * @name: name dog
+ * @age: age dog
+ * @owner: owner dog
+ * Return: pointer
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	unsigned int nlen, olen, i;
 	dog_t *new_dog;
-	char *cp_name, *cp_owner;
-	int len_name = 0, len_owner = 0, i;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
-	while (name[len_name])
-		len_name++;
-	while (owner[len_owner])
-		len_owner++;
 	new_dog = malloc(sizeof(dog_t));
 	if (new_dog == NULL)
 		return (NULL);
-	cp_name = malloc(len_name + 1);
-	if (cp_name == NULL)
+	for (nlen = 0; name[nlen]; nlen++)
+		;
+	nlen++;
+	new_dog->name = malloc(nl * sizeof(char));
+	if (new_dog->name == NULL)
 	{
-		free (new_dog);
+		free(dog);
 		return (NULL);
 	}
-	cp_owner = malloc(len_owner + 1);
-	if (cp_owner == NULL)
+	for (i = 0; i < nlen; i++)
+		new_dog->name[i] = name[i];
+	dog->age = age;
+	for (olen = 0; owner[olen]; olen++)
+		;
+		olen++;
+	new_dog->owner = malloc(olen * sizeof(char));
+	if (dog->owner == NULL)
+	{
+		free(dog->name);
+		free(dog);
 		return (NULL);
-	for (i = 0; name[i]; i++)
-		cp_name = name[i];
-	cp_name[i] = '\0';
-	for (i = 0; owner[i]; i++)
-		cp_owner[i] = owner[i];
-	cp_owner[i] = '\0';
-
-	new_dog->name = cp_name;
-	new_dog->age = age;
-	new_dog->owner = cp_owner;
-	return (new_dog);
+	}
+	for (i = 0; i < olen; i++;)
+		new_dog->owner[i] = owner[i];
+	return (dog);
 }
