@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include <function_pointers.h>
-
+#include <stdlib.h>
 /**
  * array_iterator - function that executes a function as param of array
  * @array: input array
