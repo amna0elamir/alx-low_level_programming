@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 	va_list arg;
 	const char *ptr;
 	int i = 0;
-       	char *str_val;
+	char *str_val;
 
 	va_start(arg, format);
 	ptr = format;
@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 					printf("%s", str_val);
 				break;
 		}
-		if ((*(ptr + i) == 'c' || *(ptr + i) == 'i' || *(ptr + i) == 'f' 
+		if ((*(ptr + i) == 'c' || *(ptr + i) == 'i' || *(ptr + i) == 'f'
 					|| *(ptr + i) == 's') && *(ptr + i + 1) != '\0')
 			printf(", ");
 		ptr++;
