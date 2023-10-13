@@ -9,11 +9,10 @@ void print_all(const char * const format, ...)
 {
 	va_list arg;
 	const char *ptr;
-	int i = 0;
 	char *str_val;
+	int i = 0;
 
-	va_start(arg, format);
-	ptr = format;
+	va_start(arg, format), ptr = format;
 	while (*ptr)
 	{
 		switch (*ptr)
@@ -40,6 +39,5 @@ void print_all(const char * const format, ...)
 			printf(", ");
 		ptr++;
 	}
-	printf("\n");
-	va_end(arg);
+	printf("\n"), va_end(arg);
 }
