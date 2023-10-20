@@ -3,7 +3,7 @@
 
 /**
  * add_node - A function that adds a node at begin
- * @head: pointer to a list_t 
+ * @head: pointer to a list_t
  * @str: pointer to string
  *
  * Return: pointer to new head of list, NULL on failure
