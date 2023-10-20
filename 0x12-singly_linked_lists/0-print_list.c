@@ -9,7 +9,7 @@ size_t print_list(const list_t *h)
 {
 	unsigned int count = 0;
 
-	while (h)
+	while (*h)
 	{
 		printf("[%u] ", h->len);
 		if (h->str == NULL)
