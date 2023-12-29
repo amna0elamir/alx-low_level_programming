@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int src_fd, dest_fd;
 	int _read, _close_src, _close_dest;
 	char buffer[1024];
-	
+
 	if (argc > 3 || argc < 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
